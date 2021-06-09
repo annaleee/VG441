@@ -1,0 +1,125 @@
+\documentclass[a4paper,12pt]{journal}
+\usepackage[dvipsnames, svgnames, x11names]{xcolor} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphics}
+\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{algorithm}  
+\usepackage{algpseudocode}  
+\usepackage{amsmath}  
+\usepackage{xcolor}
+\usepackage[greek,english]{babel}
+\usepackage{chemformula}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\pagestyle{fancy}
+\rmfamily
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+\fancyhead[R]{VG441 HW1\&2}
+\title{VG441 Problem Set 1}
+\author{Anna Li \\Student ID: 518370910048}
+\date{\today}
+\lstset{
+	columns=fixed,     
+	numbers=left,                                        % 在左侧显示行号
+	numberstyle=\tiny\color{gray},                       % 设定行号格式
+	frame=none,                                          % 不显示背景边框
+	backgroundcolor=\color[RGB]{245,245,244},            % 设定背景颜色
+	keywordstyle=\color[RGB]{40,40,255},                 % 设定关键字颜色
+	numberstyle=\footnotesize\color{darkgray},           
+	commentstyle=\it\color[RGB]{0,96,96},                % 设置代码注释的格式
+	stringstyle=\ttfamily\slshape\color[RGB]{128,0,0},   % 设置字符串格式
+	showstringspaces=false,                              % 不显示字符串中的空格                                        % 设置语言
+}
+\begin{document}
+	\maketitle
+	\section*{Problem 1}
+	$$\theta^TX^TX\theta=\sum_{i}(X^TX)_{i,i}\theta_i^2+\sum_{i\not =j}(X^TX)_{i,j}\theta_i\theta_j$$
+	$$\Rightarrow \frac{d(\theta^TX^TX\theta)}{d\theta_i}=2(X^TX)_{i,i}\theta_i+\sum_{i\not j}(X^TX)_{i,j}\theta_j+\sum_{i\not j}(X^TX)_{j,i}\theta_j$$
+	Since $X^TX$ is symmetric, we could conclude that:
+	$$\Rightarrow \frac{d(\theta^TX^TX\theta)}{d\theta}=2(X^TX)\theta$$
+	\section*{Problem 2}
+	\subsection*{GBM}
+	\subsubsection*{Iteration}
+	In the first step, we get PR0, and start to calculate the deviance for each dimension. \\
+	Deviance of "Age $>$35" = $1.21\times 10^7$\\
+	Deviance of "Home Owner=Yes" = $1.27\times 10^7$\\
+	Deviance of "Car Owner=Yes" = $2.85\times 10^7$\\
+	Deviance of "Having Kids=Yes" = $1.21\times 10^7$\\
+	Therefore, we build the tree like:
+	\begin{center}
+		\begin{tabular}{c c c}
+			&&10000\\
+			&Car Owner = Yes&\\
+			&&8000\\
+			Having Kids = Yes&&\\
+			&&5000\\
+			&Home Owner&\\
+			&&500\\
+		\end{tabular}
+	\end{center}
+	In the second step, we get PR1, and start to calculate the deviance and find:\\
+	Deviance of "Age $>$35" = $9.8\times 10^6$\\
+	Deviance of "Home Owner=Yes" = $2.3\times 10^7$\\
+	Deviance of "Car Owner=Yes" = $1.027\times 10^7$\\
+	Deviance of "Having Kids=Yes" = $9.8\times 10^6$\\
+	Therefore, the tree is the same as the last stage\\
+	\subsubsection*{Results}
+	Finally, we run GBM o paper and get the table that:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			F0&PR0&F1&PR1&F2&PR2\\\hline
+			5875&4125&6287.5&3712.5&6658.75&3341.25\\\hline
+			5875&-5375&5337.5&-4837.5&4853.75&-4353.75\\\hline
+			5875&2125&5787.5&1912.5&6278.75&1721.25\\\hline
+			5875&-875&6087.5&-787.5&5708.75&-708.75\\\hline
+		\end{tabular}
+	\end{center}
+	\subsection*{XGBM}
+	\subsubsection*{Iteration}
+	In the first step, we get PR0, and start to calculate the ss for each dimension. \\
+	SS of "Age $>$35" = $2.6\times 10^7$\\
+	SS of "Home Owner=Yes" = $2.16\times 10^7$\\
+	SS of "Car Owner=Yes" = $1.27\times 10^7$\\
+	SS of "Having Kids=Yes" = $2.6\times 10^7$\\
+	Therefore, we build the tree like:
+	\begin{center}
+		\begin{tabular}{c c c}
+			&&10000\\
+			&Car Owner = Yes&\\
+			&&8000\\
+			Having Kids = Yes&&\\
+			&&5000\\
+			&Home Owner&\\
+			&&500\\
+		\end{tabular}
+	\end{center}
+	In the second step, we get PR1, and start to calculate the SS and find:\\
+	SS of "Age $>$35" = $2.35\times 10^7$\\
+	SS of "Home Owner=Yes" = $1.96\times 10^7$\\
+	SS of "Car Owner=Yes" = $1.15\times 10^7$\\
+	SS of "Having Kids=Yes" = $2.35\times 10^7$\\
+	Therefore, the tree is the same as the last stage\\
+	\subsubsection*{Results}
+	Finally, we run XGBM o paper and get the table that:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			F0&PR0&F1&PR1&F2&PR2\\\hline
+			5875&4125&6081.25&3918.75&6277.1875&3722.8125\\\hline
+			5875&-5375&5606.25&-5106.25&5350.9375&-4850.9375\\\hline
+			5875&2125&5981.25&2018.75&6082.1875& 1917.8125\\\hline
+			5875&-875&5831.25&-831.25&5789.6875&-789.6875\\\hline
+		\end{tabular}
+	\end{center}
+
+\end{document}
