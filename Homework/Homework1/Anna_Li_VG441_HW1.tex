@@ -47,6 +47,32 @@
 	Since $X^TX$ is symmetric, we could conclude that:
 	$$\Rightarrow \frac{d(\theta^TX^TX\theta)}{d\theta}=2(X^TX)\theta$$
 	\section*{Problem 2}
+	\subsection*{Iterations}
+	Firstly, we get PR0 = \[4125,-5375,2125,-875\] and get the decision tree like:
+	\begin{center}
+		\begin{tabular}{c c c}
+			&&4125\\
+			&Car Owner&\\
+			&&2125\\
+			Age$<$35&&\\
+			&&-875\\
+			&Home Owner&\\
+			&&-5375\\
+		\end{tabular}
+	\end{center}
+Secondly, we get PR1=\[3712.5,-4837.5,1912.5,-787.5\] and get the decision tree like:
+	\begin{center}
+	\begin{tabular}{c c c}
+		&&3712.5\\
+		&Car Owner&\\
+		&&1912.5\\
+		Age$<$35&&\\
+		&&-787.5\\
+		&Home Owner&\\
+		&&-4837.5\\
+	\end{tabular}
+\end{center}
+	\subsection*{Results}
 	Finally, we run GBM o paper and get the table that:
 	\begin{center}
 		\begin{tabular}{|c|c|c|c|c|c|}
@@ -59,6 +85,28 @@
 		\end{tabular}
 	\end{center}
 	\subsection*{XGBM}
+		\subsection*{Iterations}
+	Firstly, we get PR0 = \[4125,-5375,2125,-875\] and get the decision tree like:
+	\begin{center}
+		\begin{tabular}{c c c}
+			&&2125,4125\\
+			Age$<$35&&\\
+			&&-875\\
+			&Home Owner&\\
+			&&-5375\\
+		\end{tabular}
+	\end{center}
+	Secondly, we get PR1=\[3916.7,-5106.25,1916.7,-831.25\] and get the decision tree like:
+	\begin{center}
+		\begin{tabular}{c c c}
+			&&3916.7,1916.7\\
+			Age$<$35&&\\
+			&&-831.25\\
+			&Home Owner&\\
+			&&-5106.25\\
+		\end{tabular}
+	\end{center}
+	\subsection*{Results}
 	Finally, we run XGBM o paper and get the table that:
 	\begin{center}
 		\begin{tabular}{|c|c|c|c|c|c|}
