@@ -1,0 +1,3 @@
+/home/sjtu/study/VG441/Homework/Homework2/Question2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sjtu/study/VG441/Homework/Homework2/Question2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sjtu/study/VG441/Homework/Homework2/Question2/cmake-build-debug/CMakeFiles/Question2.dir
