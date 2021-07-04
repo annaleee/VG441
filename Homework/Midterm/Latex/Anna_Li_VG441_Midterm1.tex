@@ -287,8 +287,67 @@ Order 570 on Sunday, order 670 on Thursday
 		\end{tabular}
 	\end{center}
 	\subsection*{(c) Formulate the problem as a MILP on paper and solve it in Python.}
-	for X, we use $x_n$ to express the price of order when time n:\\
-	We want to minimize: $\sum_{1\leq n\leq 8}$\\
+	we set variable as:\\
+	$d=[220,155,105,90,170,210,290]$\\
+	$T,K,h=7,1000,1.2$
+	We want to minimize: $K*y[t]+h*x[t]$\\
+	and the constraints are:\\
+	$q[t]\leq M*y[t]$\\
+	$x[t]=x[t-1]+q[t]-d[t]$\\
+	$x[0]=q[0]-d[0]$
+	Therefore, we solve this in python and get the results that:
+	\begin{lstlisting}
+		Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+		Optimize a model with 14 rows, 21 columns and 34 nonzeros
+		Model fingerprint: 0x75f00a53
+		Variable types: 14 continuous, 7 integer (7 binary)
+		Coefficient statistics:
+		Matrix range     [1e+00, 1e+06]
+		Objective range  [1e+00, 1e+03]
+		Bounds range     [1e+00, 1e+00]
+		RHS range        [9e+01, 3e+02]
+		Presolve removed 3 rows and 4 columns
+		Presolve time: 0.00s
+		Presolved: 11 rows, 17 columns, 27 nonzeros
+		Variable types: 11 continuous, 6 integer (6 binary)
+		
+		Root relaxation: objective 1.949020e+03, 7 iterations, 0.00 seconds
+		
+		Nodes    |    Current Node    |     Objective Bounds      |     Work
+		Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+		
+		0     0 1949.02000    0    4          - 1949.02000      -     -    0s
+		H    0     0                    5948.0000000 1949.02000  67.2%     -    0s
+		H    0     0                    3926.0000000 1949.02000  50.4%     -    0s
+		0     0 3204.90092    0    3 3926.00000 3204.90092  18.4%     -    0s
+		H    0     0                    3710.0000000 3204.90092  13.6%     -    0s
+		
+		Cutting planes:
+		Implied bound: 7
+		MIR: 2
+		Flow cover: 4
+		
+		Explored 1 nodes (15 simplex iterations) in 0.00 seconds
+		Thread count was 8 (of 8 available processors)
+		
+		Solution count 3: 3710 3926 5948 
+		
+		Optimal solution found (tolerance 1.00e-04)
+		Best objective 3.709999999983e+03, best bound 3.709999999983e+03, gap 0.0000%
+		
+		Variable            X 
+		-------------------------
+		order_quantity[0]          570 
+		order_quantity[4]          670 
+		inventory_level[0]          350 
+		inventory_level[1]          195 
+		inventory_level[2]           90 
+		inventory_level[4]          500 
+		inventory_level[5]          290 
+		if_order[0]            1 
+		if_order[4]            1 
+		
+	\end{lstlisting}
 	
 	\section*{Problem 4 (Linear Programming Duality)}
 	\subsection*{(a) Please write down duality of the following linear programming problem.}
@@ -307,7 +366,8 @@ Order 570 on Sunday, order 670 on Thursday
 	\begin{equation}
 		\begin{aligned}
 			min\quad &\sum_{i:(i,j)\in E}y_i+\sum_{j:(i,j)\in E}y_{n+j}\\
-			s.t.\quad &
+			s.t.\quad &y_i+y_j\geq 1\text{ for (i,j)}\in E\\
+			&y_k\geq 0\text{ for }k\in A
 		\end{aligned}
 	\end{equation}
 \end{document}

@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from gurobipy import *
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 def answer_1_a(data):
     plt.scatter(np.linspace(0,59,60),data.demands)
@@ -27,7 +28,25 @@ def answer_1_c(data,n,depth,rate,loss):
     plt.plot(x_column.reshape(-1,1), y_predicted)
     plt.show()
 
+def answer_3_c():
+    import numpy as np
+    d = [220, 155, 105, 90, 170, 210,290]
+    T, K, h = 7, 1000, 1.2
+    M = 10e5
+    WW = Model()
+
+    q = WW.addVars(T, lb=np.zeros(7), vtype=GRB.CONTINUOUS, name="order_quantity")
+    x = WW.addVars(T, lb=np.zeros(7), vtype=GRB.CONTINUOUS, name="inventory_level")
+    y = WW.addVars(T, vtype=GRB.BINARY, name="if_order")
+
+    WW.setObjective(quicksum(K * y[t] + h * x[t] for t in range(T)), GRB.MINIMIZE)
+
+    c1 = WW.addConstrs(q[t] <= M * y[t] for t in range(T))
+    c2 = WW.addConstrs(x[t] == x[t - 1] + q[t] - d[t] for t in range(1, T))
+    c3 = WW.addConstr(x[0] == q[0] - d[0])
+    WW.optimize()
+    WW.printAttr('X')
 
 if __name__ == '__main__':
     data=pd.read_csv("demands.csv",index_col=0)
-    answer_1_c(data,50,1,1,'ls')
+    answer_3_c()
