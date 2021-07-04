@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.28)  4 JUL 2021 04:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.28)  5 JUL 2021 02:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1291,11 +1291,11 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Article: 
-<1_a_1.png, id=4, 584.1825pt x 459.7175pt>
+<1_a_1.png, id=4, 581.17125pt x 433.62pt>
 File: 1_a_1.png Graphic file (type png)
 <use 1_a_1.png>
 Package pdftex.def Info: 1_a_1.png  used on input line 50.
-(pdftex.def)             Requested size: 408.92496pt x 321.80005pt.
+(pdftex.def)             Requested size: 406.8171pt x 303.53192pt.
 <1_b_1.png, id=6, 574.145pt x 451.6875pt>
 File: 1_b_1.png Graphic file (type png)
 <use 1_b_1.png>
@@ -1306,13 +1306,13 @@ Overfull \hbox (4.07251pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-<1_c_1.png, id=7, 591.20876pt x 465.74pt>
+<1_c_1.png, id=7, 577.15625pt x 448.67625pt>
 File: 1_c_1.png Graphic file (type png)
 <use 1_c_1.png>
 Package pdftex.def Info: 1_c_1.png  used on input line 65.
-(pdftex.def)             Requested size: 472.96764pt x 372.5925pt.
+(pdftex.def)             Requested size: 461.72562pt x 358.94148pt.
 
-Overfull \hbox (17.72353pt too wide) in paragraph at lines 65--66
+Overfull \hbox (6.4815pt too wide) in paragraph at lines 65--66
  [][] 
  []
 
@@ -1327,58 +1327,33 @@ We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 [2 <./1_b_1.png>]
-<1_c_2.png, id=22, 611.28375pt x 470.75874pt>
+<1_c_2.png, id=22, 566.115pt x 435.6275pt>
 File: 1_c_2.png Graphic file (type png)
 <use 1_c_2.png>
 Package pdftex.def Info: 1_c_2.png  used on input line 72.
-(pdftex.def)             Requested size: 489.02766pt x 376.60751pt.
-
-Overfull \hbox (33.78355pt too wide) in paragraph at lines 72--73
- [][] 
- []
-
-<1_c_3.png, id=23, 608.2725pt x 456.70625pt>
+(pdftex.def)             Requested size: 452.89261pt x 348.50247pt.
+<1_c_3.png, id=23, 563.10374pt x 434.62375pt>
 File: 1_c_3.png Graphic file (type png)
 <use 1_c_3.png>
 Package pdftex.def Info: 1_c_3.png  used on input line 79.
-(pdftex.def)             Requested size: 486.61867pt x 365.36548pt.
-
-Overfull \hbox (31.37456pt too wide) in paragraph at lines 79--80
- [][] 
- []
-
-<1_c_4.png, id=24, 593.21625pt x 465.74pt>
+(pdftex.def)             Requested size: 450.48361pt x 347.69946pt.
+<1_c_4.png, id=24, 563.10374pt x 431.6125pt>
 File: 1_c_4.png Graphic file (type png)
 <use 1_c_4.png>
 Package pdftex.def Info: 1_c_4.png  used on input line 86.
-(pdftex.def)             Requested size: 474.57364pt x 372.5925pt.
-
-Overfull \hbox (19.32953pt too wide) in paragraph at lines 86--87
- [][] 
- []
-
-<1_c_5.png, id=25, 598.235pt x 455.7025pt>
+(pdftex.def)             Requested size: 450.48361pt x 345.29045pt.
+<1_c_5.png, id=25, 556.0775pt x 431.6125pt>
 File: 1_c_5.png Graphic file (type png)
 <use 1_c_5.png>
 Package pdftex.def Info: 1_c_5.png  used on input line 93.
-(pdftex.def)             Requested size: 478.58865pt x 364.56248pt.
-
-Overfull \hbox (23.34454pt too wide) in paragraph at lines 93--94
- [][] 
- []
-
-<1_c_6.png, id=26, 586.19pt x 460.72125pt>
+(pdftex.def)             Requested size: 444.86261pt x 345.29045pt.
+<1_c_6.png, id=26, 568.1225pt x 439.6425pt>
 File: 1_c_6.png Graphic file (type png)
 <use 1_c_6.png>
 Package pdftex.def Info: 1_c_6.png  used on input line 100.
-(pdftex.def)             Requested size: 468.95264pt x 368.5775pt.
-
-Overfull \hbox (13.70853pt too wide) in paragraph at lines 100--101
- [][] 
- []
-
-[3 <./1_c_1.png>] [4 <./1_c_2.png>] [5 <./1_c_3.png>] [6 <./1_c_4.png>]
-[7 <./1_c_5.png>]
+(pdftex.def)             Requested size: 454.4986pt x 351.71446pt.
+ [3 <./1_c_1.png>] [4 <./1_c_2.png>] [5 <./1_c_3.png>]
+[6 <./1_c_4.png>] [7 <./1_c_5.png>]
 Overfull \hbox (49.55734pt too wide) detected at line 114
 \OML/cmm/m/it/12 K \OT1/cmr/m/n/12 = 50[] \OML/cmm/m/it/12 h \OT1/cmr/m/n/12 = 
 200\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 12[] \OML/cmm/m/it/12 ^^U \OT1/cmr/m/n/12 
@@ -1387,6 +1362,9 @@ Overfull \hbox (49.55734pt too wide) detected at line 114
 
 NOTE: coordinate (0Y0.0e0],4Y0.0e0]) has been dropped because it is unbounded (
 in y). (see also unbounded coords=jump). 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [8 <./1_c_6.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
@@ -1406,40 +1384,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
  []
 
-[10] [11]
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 239--241
+
+ []
+
+[11]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-45.
+80.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 245.
- [12]
-(./Anna_Li_VG441_Midterm1.aux) ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 280.
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
+
+ []
+
+[12] [13] (./Anna_Li_VG441_Midterm1.aux) ) 
 Here is how much of TeX's memory you used:
- 30521 strings out of 481239
- 735626 string characters out of 5920377
+ 30520 strings out of 481239
+ 735618 string characters out of 5920377
  1141054 words of memory out of 5000000
- 45260 multiletter control sequences out of 15000+600000
+ 45259 multiletter control sequences out of 15000+600000
  543464 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,103p,735b,1972s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-s
-uper-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
-m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on Anna_Li_VG441_Midterm1.pdf (12 pages, 274212 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-
+super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb>
+
+Output written on Anna_Li_VG441_Midterm1.pdf (13 pages, 254960 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
