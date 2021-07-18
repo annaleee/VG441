@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt]{journal}
+\usepackage[dvipsnames, svgnames, x11names]{xcolor} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphics}
+\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{algorithm}  
+\usepackage{algpseudocode}  
+\usepackage{amsmath}  
+\usepackage{xcolor}
+\usepackage[greek,english]{babel}
+\usepackage{chemformula}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\pagestyle{fancy}
+\usetikzlibrary{math}
+\rmfamily
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+\fancyhead[R]{VG441 HW3}
+\title{VG441 Problem Set 3}
+\author{Anna Li \\Student ID: 518370910048}
+\date{\today}
+\lstset{
+	columns=fixed,     
+	numbers=left,                                        % 在左侧显示行号
+	numberstyle=\tiny\color{gray},                       % 设定行号格式
+	frame=none,                                          % 不显示背景边框
+	backgroundcolor=\color[RGB]{245,245,244},            % 设定背景颜色
+	keywordstyle=\color[RGB]{40,40,255},                 % 设定关键字颜色
+	numberstyle=\footnotesize\color{darkgray},           
+	commentstyle=\it\color[RGB]{0,96,96},                % 设置代码注释的格式
+	stringstyle=\ttfamily\slshape\color[RGB]{128,0,0},   % 设置字符串格式
+	showstringspaces=false,                              % 不显示字符串中的空格                                        % 设置语言
+}
+\begin{document}
+	\maketitle
+	\section*{Problem 1}
+	\subsection*{1. Formulate the set cover problem as a MILP}
+	\textbf{Decision Variables:}\\
+	Our choices of sets: $x_i\in \{0,1\},\quad i\in\{1,2,...,m\}$.\\
+	elements and sets: $s_{mn}\in\{0,1\}$, if set m has element n of V, then $s_{mn}=1$, otherwise $s_{mn}=0$\\
+	\textbf{Objective:}\\
+	Minimize $\sum_{m}^{1}x_i$\\
+	\textbf{Constraints:}\\
+	$(S\cdot X)_{n}\geq 1$ for $\forall n$\\
+	$\sum_{1}^{m}x_i\geq 1$
+\end{document}
