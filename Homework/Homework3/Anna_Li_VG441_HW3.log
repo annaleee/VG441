@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.28)  18 JUL 2021 19:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.28)  18 JUL 2021 20:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,16 +1287,26 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Article: 
+
+Overfull \hbox (73.50497pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (87.60495pt too wide) in paragraph at lines 78--80
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
 [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
@@ -1310,7 +1320,7 @@ This may cause the page layout to be inconsistent, however.
 Here is how much of TeX's memory you used:
  30090 strings out of 481239
  719609 string characters out of 5920377
- 1147050 words of memory out of 5000000
+ 1145050 words of memory out of 5000000
  44850 multiletter control sequences out of 15000+600000
  541812 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1325,7 +1335,7 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Anna_Li_VG441_HW3.pdf (2 pages, 112032 bytes).
+Output written on Anna_Li_VG441_HW3.pdf (2 pages, 112055 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
